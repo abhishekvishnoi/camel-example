@@ -8,6 +8,7 @@ pipeline {
           
           steps{
             echo "building an aplication.."
+            sh mvn clean package -DskipTests=true
           }
         
         }
